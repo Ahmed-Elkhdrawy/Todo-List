@@ -67,11 +67,13 @@ window.addEventListener('load', () => {
             let btnEdit = document.createElement('button');
             btnEdit.classList.add('edit');
             let editeIcon = document.createElement('i');
-            editeIcon.classList.add('fa-regular', 'fa-pen-to-square');
+            editeIcon.classList.add('material-symbols-outlined');
+            editeIcon.innerText = 'border_color';
             let btnDelete = document.createElement('button');
             btnDelete.classList.add('delete');
             let trashIcon = document.createElement('i');
-            trashIcon.classList.add('fa-regular', 'fa-trash-can');
+            trashIcon.classList.add('material-symbols-outlined');
+            trashIcon.innerText = 'delete';
             btnEdit.appendChild(editeIcon);
             btnDelete.appendChild(trashIcon);
             actionDiv.append(btnEdit , btnDelete);
