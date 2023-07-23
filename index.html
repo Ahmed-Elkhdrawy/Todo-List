@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>To Do</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css"/>
+        <!-- Start Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin"/>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"/>
+        <!-- End Google Fonts -->
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <main class="container-full app col-flex">
+            <h1 class="colr-whit fz-25 m-0">Todo <span>App</span></h1>
+            <section class="container todo-app mt-30 mb-30 p-20">
+                <section class="greeting">
+                    <h2 class="title ds-flex mt-0 mb-15 fz-18">
+                        Welcome,
+                        <input
+                            class="fz-18 ml-5 fw-bold"
+                            type="text"
+                            id="name"
+                            placeholder="Name Here"/>
+                    </h2>
+                </section>
+                <section class="create-task">
+                    <h3 class="mt-0 mb-5 fz-14">Create A Task</h3>
+                    <form id="to-do-form">
+                        <h4 class="mt-0 mb-15 fz-14 fw-norm">What's on your todo list ?</h4>
+                        <input
+                            class="ds-blk w-full fz-14 p-15 borad-5 bord-non"
+                            type="text"
+                            name="taskcontent"
+                            id="task-content"
+                            placeholder="e.g. learn javascript"/>
+                        <h5 class="mt-20 mb-5">Pick a category.</h5>
+                        <div class="options mb-15">
+                            <label class="p-20 borad-5 col-flex gap-10 fw-400">
+                                <input type="radio" name="category" id="category1" value="business"/>
+                                <span class="bubble business"></span>
+                                <div>Business</div>
+                            </label>
+                            <label class="p-20 borad-5 col-flex gap-10 fw-400">
+                                <input type="radio" name="category" id="category2" value="personal"/>
+                                <span class="bubble personal"></span>
+                                <div>Personal</div>
+                            </label>
+                        </div>
+                        <input
+                            class="add-task w-full p-10 fz-14 fw-bold borad-5 bord-non"
+                            type="submit"
+                            value="Add Task"/>
+                    </form>
+                </section>
+                <section class="todo-list">
+                    <h3 class="mt-0 mb-15 fz-14">Todo List</h3>
+                    <div class="tasks" id="div-tasks"></div>
+                </section>
+                <button class="clear-tasks ds-blk borad-5">Clear</button>
+            </section>
+            <p class="copr fz-14 colr-whit">
+                <span>Created By</span>
+                Ahmed Elkhdrawy
+            </p>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>
